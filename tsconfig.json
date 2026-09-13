@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": [
+      "node",
+      "@cloudflare/workers-types"
+    ],
+    "customConditions": [
+      "workerd"
+    ]
+  },
+  "include": [
+    "main.d.ts"
+  ]
+}

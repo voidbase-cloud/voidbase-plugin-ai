@@ -1,0 +1,43 @@
+{
+  "name": "@voidbase-cloud/plugin-ai",
+  "version": "0.9.0-beta.60",
+  "description": "The ai plugin of voidbase: chat and conversations over the instance's own data, through its MCP tools",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voidbase-cloud/voidbase-plugin-ai.git"
+  },
+  "homepage": "https://github.com/voidbase-cloud/voidbase-plugin-ai#readme",
+  "exports": {
+    ".": {
+      "types": "./main.d.ts",
+      "default": "./main.js"
+    },
+    "./manifest.json": "./manifest.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "main.js",
+    "main.d.ts",
+    "manifest.json",
+    "tsconfig.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "@voidbase-cloud/voidbase": ">=0.9.0-beta.61"
+  },
+  "devDependencies": {
+    "@voidbase-cloud/voidbase": "^0.9.0-beta.61",
+    "hono": "^4.11.9",
+    "@types/bun": "^1.4.1",
+    "typescript": "^5.9.3",
+    "@voidbase-cloud/plugin-mcp": "github:voidbase-cloud/voidbase-plugin-mcp"
+  }
+}
